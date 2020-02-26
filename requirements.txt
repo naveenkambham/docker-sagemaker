@@ -1,0 +1,10 @@
+numpy
+pandas
+flask
+jupyter
+seaborn
+scikit-learn
+awscli
+requests==2.20.0  # temp
+sagemaker  # temp
+pickle
