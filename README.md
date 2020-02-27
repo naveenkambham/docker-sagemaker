@@ -1,7 +1,7 @@
 # docker-sagemaker
-This project shows how to host a fully custom machine learning models on AWS SageMaker and trigger the model training and deployment efficiently. For the purpose of demostration the selected model is a simple linear regression model.
+Sagemaker is a fully managed machine lealrning service that helps machine leaarning engineers to build, train and deploy the ML models at scale. The major advantages with Sagemaker is it automates the typical iterative ML project development cycle build-train-deploy. This project shows how to host a fully custom machine learning models on AWS SageMaker and trigger the model training and deployment efficiently. As we are focussing on automating the ML model deployment process, a simple linear regression model is used. Sagemaker uses docker containers to run scripts, train algorithms and deploy models. Following are the major steps involved.
 
-## Step 1: Creating Docker Image
+## Step 1: Create Docker Image
 Docker images are useful to build the run time container for machine learning models. All the required libraries will be mentioned in the requirements.txt file and training model, data will be copied to the ECR. Sagemaker job requires that image define an Entry point and corresponding script file.
 
 ## Step 2: Register the image with AWS ECR
